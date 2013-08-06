@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67228CD6179CB9DE0052F8E4 /* Roullette.png in Resources */ = {isa = PBXBuildFile; fileRef = 67228CD5179CB9DE0052F8E4 /* Roullette.png */; };
 		677BCD3917961FA4009A91FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677BCD3817961FA4009A91FA /* Cocoa.framework */; };
 		677BCD4317961FA4009A91FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 677BCD4117961FA4009A91FA /* InfoPlist.strings */; };
 		677BCD4517961FA4009A91FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BCD4417961FA4009A91FA /* main.m */; };
 		677BCD4917961FA4009A91FA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 677BCD4717961FA4009A91FA /* Credits.rtf */; };
 		677BCD4C17961FA4009A91FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BCD4B17961FA4009A91FA /* AppDelegate.m */; };
 		677BCD4F17961FA5009A91FA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677BCD4D17961FA5009A91FA /* MainMenu.xib */; };
+		677BCD5B17962969009A91FA /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677BCD5A17962969009A91FA /* AppController.m */; };
+		677BCD5D17962A02009A91FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 677BCD5C17962A02009A91FA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67228CD5179CB9DE0052F8E4 /* Roullette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Roullette.png; sourceTree = "<group>"; };
 		677BCD3517961FA4009A91FA /* RouletteSpinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouletteSpinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677BCD3817961FA4009A91FA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		677BCD3B17961FA4009A91FA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +33,9 @@
 		677BCD4A17961FA4009A91FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		677BCD4B17961FA4009A91FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		677BCD4E17961FA5009A91FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		677BCD5917962969009A91FA /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		677BCD5A17962969009A91FA /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		677BCD5C17962A02009A91FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677BCD5D17962A02009A91FA /* QuartzCore.framework in Frameworks */,
 				677BCD3917961FA4009A91FA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +54,7 @@
 		677BCD2C17961FA4009A91FA = {
 			isa = PBXGroup;
 			children = (
+				677BCD5C17962A02009A91FA /* QuartzCore.framework */,
 				677BCD3E17961FA4009A91FA /* RouletteSpinner */,
 				677BCD3717961FA4009A91FA /* Frameworks */,
 				677BCD3617961FA4009A91FA /* Products */,
@@ -82,8 +91,11 @@
 		677BCD3E17961FA4009A91FA /* RouletteSpinner */ = {
 			isa = PBXGroup;
 			children = (
+				67228CD5179CB9DE0052F8E4 /* Roullette.png */,
 				677BCD4A17961FA4009A91FA /* AppDelegate.h */,
 				677BCD4B17961FA4009A91FA /* AppDelegate.m */,
+				677BCD5917962969009A91FA /* AppController.h */,
+				677BCD5A17962969009A91FA /* AppController.m */,
 				677BCD4D17961FA5009A91FA /* MainMenu.xib */,
 				677BCD3F17961FA4009A91FA /* Supporting Files */,
 			);
@@ -156,6 +168,7 @@
 				677BCD4317961FA4009A91FA /* InfoPlist.strings in Resources */,
 				677BCD4917961FA4009A91FA /* Credits.rtf in Resources */,
 				677BCD4F17961FA5009A91FA /* MainMenu.xib in Resources */,
+				67228CD6179CB9DE0052F8E4 /* Roullette.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +181,7 @@
 			files = (
 				677BCD4517961FA4009A91FA /* main.m in Sources */,
 				677BCD4C17961FA4009A91FA /* AppDelegate.m in Sources */,
+				677BCD5B17962969009A91FA /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +317,7 @@
 				677BCD5417961FA5009A91FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
