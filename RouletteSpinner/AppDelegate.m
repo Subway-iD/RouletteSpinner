@@ -10,13 +10,26 @@
 
 @implementation AppDelegate
 
+@synthesize controller;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask
+                                          handler: ^NSEvent *(NSEvent *event){
+                                              if ([event keyCode] == 49) {
+                                                  [controller spin:self];
+                                              }
+                                              
+                                              return event;
+                                              
+    }];
 }
 
 -(BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
     return TRUE;
 }
+
+
 
 @end

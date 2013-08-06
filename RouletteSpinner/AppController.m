@@ -83,11 +83,7 @@
     numberHit.stringValue = @"";
     
     space = arc4random() % 38;
-    spot = @"";
-    if (space == 37)
-        spot = @"00";
-    else
-        spot = [NSString stringWithFormat:@"%d",space];
+    spot = (space == 37 ? @"00" : [NSString stringWithFormat:@"%d",space]);
     
     //[sublayer addAnimation:[self createSpinningAnimation] forKey:@"animation"];
     [sublayer addAnimation:[self createSpinningAnimation1] forKey:@"spin"];
